@@ -1,0 +1,116 @@
+.col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8 {
+  /** /border: 1px solid #333; /**/
+}
+
+body {
+  background-color: #f9f3df;
+}
+ul {
+  padding-left: 1.5em;
+}
+tt {
+  font-size: 1.125em;
+}
+p {
+  margin-bottom: 0.125em;
+}
+a {
+  color: background-color: #7092be;
+  font-weight: 700;
+}
+
+.header {
+  margin-top: 3em;
+}
+.header .col-sm-10 {
+  border-bottom: 5px double #c82b32;
+  padding: 0;
+}
+.header div {
+  text-align: center;
+}
+.header h1 {
+  font-family: Oswald;
+  font-weight: 700;
+  font-size:   10vw; /*3em;*/
+  color: #252525;
+  line-height: 10vw;
+  margin: 0;
+  padding: 0;
+}
+
+.header small, .header p {
+  font-family: "Roboto Condensed";
+  font-size: 4vw;
+  font-weight: 400;
+  color: #777;
+  margin: 0;
+  padding: 0;
+}
+.header small {
+  display: inline-block;
+  float: left;
+  width: 32%;
+}
+.header small:first-of-type {
+  margin-left: 1vw;
+  text-align: left;
+}
+.header small:last-of-type {
+  text-align: right;
+}
+h2 {
+  font-family: Oswald;
+  font-weight: 700;
+  font-size: 2m;
+  margin-bottom: 0.5em;
+}
+.main {
+  font-family: Roboto;
+  font-size: 1em;
+}
+.main .col-md-5:last-of-type{
+  float: right;
+}
+
+h4 {
+  font-weight: 700;
+  font-family: Roboto;
+  margin-bottom: 0;
+  font-size: 1.125em;
+}
+
+table {
+  border: none;
+  width: 100%;
+  margin-top: 0;
+}
+td:first-of-type {
+  padding-right: 10px;
+  width: 110px;
+}
+span.progress-bar {
+  background-color: #c82b32;
+  display: inline-block;
+  height: 5px;
+  width: 0px;
+}
+td.skill-category {
+  padding-top: 1em;
+  font-size: 1.125em;
+}
+tr:first-of-type td.skill-category {
+  padding-top: 0;
+}
+td, .faded {
+  font-size: 0.85em;
+  color: #555;
+}
+
+.row {
+  padding-bottom: 1em;
+}
+
+#web-table .progress-bar {
+  background-color: #7092be;
+}
