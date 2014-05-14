@@ -12,7 +12,7 @@
     $(function(){
       $("span.progress-bar").each(function() {
         $(this).animate({
-          width : 1.5*parseInt($(this).attr("data-width"))+"px"
+          width : $(this).attr("data-width")+"%"//1.5*parseInt($(this).attr("data-width"))+"px"
         });
       });
     });
@@ -31,7 +31,6 @@
       </div>
       <div class="col-sm-1"></div>
     </div>
-    
   </div>
   
   <div class="main container">
@@ -67,11 +66,11 @@
               <tr><td class="skill-category" colspan="2"><strong>Application and Systems Development</strong></td></tr>
               <tr>
                 <td>C/C++</td>
-                <td><span class="progress-bar" data-width="50"></span></td>
+                <td><span class="progress-bar" data-width="60"></span></td>
               </tr>
               <tr>
                 <td>Java</td>
-                <td><span class="progress-bar" data-width="40"></span></td>
+                <td><span class="progress-bar" data-width="75"></span></td>
               </tr>
               <tr>
                 <td>x86 Assembly</td>
@@ -84,23 +83,22 @@
                 <td><span class="progress-bar" data-width="100"></span></td>
               </tr>
               <tr>
-              <tr>
                 <td>Ruby</td>
-                <td><span class="progress-bar" data-width="70"></span></td>
+                <td><span class="progress-bar" data-width="60"></span></td>
               </tr>
               <tr>
                 <td>Perl</td>
-                <td><span class="progress-bar" data-width="30"></span></td>
+                <td><span class="progress-bar" data-width="40"></span></td>
               </tr>              
 
               <tr><td class="skill-category" colspan="2"><strong>Miscellaneous</strong></td></tr>
               <tr>
                 <td>XML</td>
-                <td><span class="progress-bar" data-width="70"></span></td>
+                <td><span class="progress-bar" data-width="75"></span></td>
               </tr>
               <tr>
                 <td>JSON</td>
-                <td><span class="progress-bar" data-width="70"></span></td>
+                <td><span class="progress-bar" data-width="90"></span></td>
               </tr>
               <tr>
                 <td>Unix/Linux</td>
@@ -108,34 +106,12 @@
               </tr>
               <tr>
                 <td>Vi[m]</td>
-                <td><span class="progress-bar" data-width="80"></span></td>
+                <td><span class="progress-bar" data-width="90"></span></td>
               </tr>
             </table>
           </div>
           <div class="col-sm-6">
             <table id="web-table">
-              <tr><td class="skill-category" colspan="2"><strong>Web (Server-Side)</strong></td></tr>
-              <tr>
-                <td>Django</td>
-                <td><span class="progress-bar" data-width="70"></span></td>
-              </tr>
-              <tr>
-                <td>Ruby on Rails</td>
-                <td><span class="progress-bar" data-width="50"></span></td>
-              </tr>
-              <tr>
-                <td>SpringMVC (Java)</td>
-                <td><span class="progress-bar" data-width="30"></span></td>
-              </tr>
-              <tr>
-                <td>Java Servlets</td>
-                <td><span class="progress-bar" data-width="30"></span></td>
-              </tr>
-              <tr>
-                <td>JSP</td>
-                <td><span class="progress-bar" data-width="30"></span></td>
-              </tr>
-              
               <tr><td class="skill-category" colspan="2"><strong>Web (Client-Side)</strong></td></tr>
               <tr>
                 <td>HTML4/5</td>
@@ -150,20 +126,50 @@
                 <td><span class="progress-bar" data-width="100"></span></td>
               </tr>
               <tr>
+                <td>jQuery</td>
+                <td><span class="progress-bar" data-width="90"></span></td>
+              </tr>
+              <tr>
                 <td>AJAX</td>
                 <td><span class="progress-bar" data-width="90"></span></td>
               </tr>
               <tr>
                 <td>HTML5 Canvas</td>
-                <td><span class="progress-bar" data-width="80"></span></td>
+                <td><span class="progress-bar" data-width="70"></span></td>
               </tr>
               <tr>
-                <td>jQuery</td>
-                <td><span class="progress-bar" data-width="90"></span></td>
+                <td>Bootstrap</td>
+                <td><span class="progress-bar" data-width="60"></span></td>
+              </tr>
+            
+            <tr><td class="skill-category" colspan="2"><strong>Web (Server-Side)</strong></td></tr>
+              <tr>
+                <td>Django</td>
+                <td><span class="progress-bar" data-width="70"></span></td>
               </tr>
               <tr>
-                <td>D3.js</td>
-                <td><span class="progress-bar" data-width="20"></span></td>
+                <td>Ruby on Rails</td>
+                <td><span class="progress-bar" data-width="50"></span></td>
+              </tr>
+              <tr>
+                <td>SpringMVC</td>
+                <td><span class="progress-bar" data-width="30"></span></td>
+              </tr>
+              <tr>
+                <td>MySQL</td>
+                <td><span class="progress-bar" data-width="75"></span></td>
+              </tr>
+              <tr>
+                <td>Java Servlets</td>
+                <td><span class="progress-bar" data-width="30"></span></td>
+              </tr>
+              <tr>
+                <td>JSP</td>
+                <td><span class="progress-bar" data-width="40"></span></td>
+              </tr>
+              <tr>
+                <td>REST Services</td>
+                <td><span class="progress-bar" data-width="50"></span></td>
               </tr>
             </table>
           </div>
@@ -173,24 +179,38 @@
     </div>
     <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-4">
+      <div id="jobs" class="col-sm-4">
         <h2>Jobs</h2>
         <ul>
           <li>
             <h4>Booz Allen Hamilton, Inc.</h4>
             <p>Consultant - 2012-present</p>
-			<p>Python (1yr 4mo), XML(1yr 4mo), REST Services (1yr 4mo), Django (10mo), Java (6mo), SpringMVC (6mo), HTML/CSS/JavaScript (3mo), jQuery (3mo), AJAX (3mo), x86 Assembly (3mo), Perl (3mo), Ruby (1mo), C (1mo)
-			<p>
-			<!--<ul>
-				<li>Developed a RESTful interface in Java on top of a legacy MySQL database using the SpringMVC framework and Jersey to retrieve and marshall data into XML and JSON.</li>
-				<li>Wrote a Python application to mass-convert malware data from the legacy MySQL database into XML documents conforming to the STiX, CybOX and MAEC standards being developed by MITRE, while contributing to the standards.</li>
-				<li>Added an HTML/CSS/JavaScript web frontend to an existing Django site to assist less technical users in crafting and executing queries for the REST service and to use corporate PKI authentication and authorization services.</li>
-			</ul>-->
-          </li>
-          <li>
-            <h4><tt>Packet Knife</tt> <span class="faded">(Python)</span></h4>
-            <p>An interactive packet inspection tool designed to detect and extract passwords and session tokens sent in plaintext.</p>
-            <p><a href="https://github.com/kenbellows/packet-knife">GitHub</a></p>
+            <ul>
+              <li>
+                <strong>June 2012-January 2013 <span class="faded">(Java, SpringMVC, REST Services, XML)</span></strong>
+                <p>Wrote a REST service to retrieve data from a legacy MySQL database.</p>
+              </li>
+              <li>
+                <strong>January 2013-October 2013 <span class="faded">(Python, MySQL, XML)</span></strong>
+                <p>Wrote a Python application to export data from a MySQL database and coerce it into XML documents following a standard.</p>
+              </li>
+              <li>
+                <strong>July 2013-October 2013 <span class="faded">(HTML/CSS/JavaScript, jQuery, AJAX, Python, Django, REST Services)</span></strong>
+                <p>Wrote a web application to assist non-programmers with creating queries for a REST service.</p>
+              </li>
+              <li>
+                <strong>November 2013-December 2013 <span class="faded">(Perl)</span></strong>
+                <p>Wrote a Perl script to process application logs and prosent collected data in a human readable format.</p>
+              </li>
+              <li>
+                <strong>January 2013 <span class="faded">(Ruby)</span></strong>
+                <p>Wrote a Ruby script to analyze unit test scripts for code coverage and accuracy, automating a previously labor intensive process.</p>
+              </li>
+              <li>
+                <strong>January 2013-March 2013 <span class="faded">(x86, C, Python)</span></strong>
+                <p>Currently working with distributed, high-availability embedded systems using x86 Assembly, C, and Python.</p>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -198,7 +218,7 @@
         <h2>Side Projects</h2>
         <ul>
           <li>
-            <h4>packet-knife <span class="faded">(Python)</span></h4>
+            <h4>PacketKnife <span class="faded">(Python)</span></h4>
             <p>An interactive packet inspection tool designed to detect and extract passwords and session tokens sent in plaintext.</p>
             <p><a href="https://github.com/kenbellows/packet-knife">GitHub</a></p>
           </li>
@@ -216,7 +236,20 @@
       </div>
       <div class="col-sm-1"></div>
     </div>
+    <!--
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <h2>Highlights</h2>
+        
+        <h4>Automated Test Review Scripts</h4>
+        <p>When tasked to review 120 unit test scripts written by coworkers for code path coverage and accuracy, I recognized an opportunity to automate.
+           Using Ruby, I wrote a script to automate the process of comparing all tested code paths to the possible paths.</p>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    -->
   </div>
-
+  
 </body>
 </html>

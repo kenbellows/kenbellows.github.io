@@ -114,3 +114,7 @@ td, .faded {
 #web-table .progress-bar {
   background-color: #7092be;
 }
+
+#jobs li {
+  padding-bottom: 0.5em;
+}
