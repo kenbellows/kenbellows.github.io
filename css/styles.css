@@ -1,7 +1,3 @@
-.col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8 {
-  /** /border: 1px solid #333; /**/
-}
-
 body {
   background-color: #f9f3df;
 }
@@ -117,4 +113,12 @@ td, .faded {
 
 #jobs li {
   padding-bottom: 0.5em;
+}
+
+.main .col-sm-4 {
+  padding-left: 2em;
+}
+
+.main .col-sm-6 {
+  padding-left: 1em;
 }
