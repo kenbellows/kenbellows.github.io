@@ -111,6 +111,10 @@ td, .faded {
   background-color: #7092be;
 }
 
+#skills .col-sm-6 {
+  padding-bottom: 1em;
+}
+
 #jobs li {
   padding-bottom: 0.5em;
 }
