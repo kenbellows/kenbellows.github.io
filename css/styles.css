@@ -118,3 +118,7 @@ td, .faded {
 .main .col-sm-4 {
   padding-left: 2em;
 }
+
+#jobs, #skills {
+  padding-left: 2.25em;
+}
