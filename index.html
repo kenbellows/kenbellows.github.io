@@ -6,38 +6,45 @@
   <title>Ken Bellows: Web & Software Developer</title>
   <link rel="stylesheet" type="text/css" href="css/styles.css" />
   <link href='//fonts.googleapis.com/css?family=Oswald|Roboto+Condensed|Roboto:400,700' rel='stylesheet' type='text/css'>
-  <script src="//code.jquery.com/jquery.min.js"></script>
-  <!--script>
-    $(function(){
-      $("span.progress-bar").each(function() {
-        $(this).animate({
-          width : $(this).attr("data-width")+"%"//1.5*parseInt($(this).attr("data-width"))+"px"
-        });
-      });
-    });
-  </script-->
 </head>
 
 <body>
   <header>
-    <h1>Ken Bellows</h1>
-    <h2>Web & Software Developer</h2>
+    <h1>Hi, I'm <mark id="name">Ken Bellows</mark> and I make websites.</h1>
   </header>
 
-  <section id="education">
-    <h3>Education</h3>
+  <section class="category" id="skills">
+    <h2>Things I'm good at</h2>
+    <p>Websites</p>
   </section>
   
-  <section id="skills">
-    <h3>Skill Set</h3>
+  <section class="category" id="interests">
+    <h3>Things I'm interested in</h3>
+    <p>Accessibility</p>
+    <p>Semantic markup</p>
   </section>
   
-  <section id="side-projects">
-    <h3>Side Projects</h3>
+  <section class="category" id="articles">
+    <h3>Things I've written</h3>
+    <a class="article-card" target="_blank" href="https://dev.to/kenbellows/gradians-and-turns-the-quiet-heroes-of-css-angles-7ia">
+        <h3>Gradians and Turns: the quiet heroes of CSS angles</h3>
+        <p class="summary"></p>
+    </a>
+    <a class="article-card" target="_blank" href="https://dev.to/kenbellows/why-we-need-css-subgrid-53mh">
+        <h3>Why we need CSS subgrid</h3>
+        <p class="summary"></p>
+    </a>
+    <a class="article-card" target="_blank" href="https://dev.to/kenbellows/css-grid-areas-are-amazing-1gha">
+        <h3>CSS Grid Areas are amazing</h3>
+        <p class="summary"></p>
+    </a>
   </section>
 
-  <section id="jobs">
-    <h3>Jobs</h3>
+  <section class="category" id="jobs">
+    <h3>Things I've made</h3>
+    <div class="showoff-card"></div>
+    <div class="showoff-card"></div>
+    <div class="showoff-card"></div>
   </section>
 </body>
 </html>
