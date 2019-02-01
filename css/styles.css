@@ -1,39 +1,12 @@
-ul {
-  padding-left: 1.5em;
-}
-tt {
-  font-size: 1.125em;
-}
-p {
-  margin-bottom: 0.125em;
-}
-a {
-  color: background-color: #7092be;
-  font-weight: 700;
-}
-
 body {
-  background-color: #f9f3df;
-
-  display: grid;
-  grid-template:
-    "header     header"
-    "education  skills"
-    "projects   jobs"
-  ;
-
-  margin: 0 auto;
-  min-width: 720px;
-  max-width: 1024px;
-  width: 100%;
+    display: grid;
+    grid:
+        "face  name name";
 }
+
 
 header {
-  margin-top: 3em;
-  border-bottom: 5px double #c82b32;
-  text-align: center;
-
-  grid-area: header;
+  display: contents;
 }
 
 main {
@@ -127,5 +100,3 @@ td, .faded {
 #jobs li {
   padding-bottom: 0.5em;
 }
-
-
